@@ -173,16 +173,49 @@ header {
 		margin-top: -12px;
 	}
 
-	&.cd-picture {
+	.fa {
+		color: white;
+    margin: auto;
+    text-align: center;
+    display: block;
+    font-size: 28px;
+    position: relative;
+	  top: 50%;
+	  -webkit-transform: translateY(-50%);
+	  -ms-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	}
+
+	&.cd-life {
 		background: $color-4;
 	}
 
-	&.cd-movie {
+	&.cd-graduation {
 		background: $color-2;
 	}
 
-	&.cd-location {
+	&.cd-study {
 		background: $color-5;
+	}
+
+	&.cd-web {
+		background: $color-6;
+	}
+
+	&.cd-science {
+		background: $color-7;
+	}
+
+	&.cd-location {
+		background: $color-8;
+	}
+
+	&.cd-tech {
+		background: $color-9;
+	}
+
+	&.cd-fun {
+		background: $color-10;
 	}
 
 	@include MQ(L) {
@@ -194,6 +227,10 @@ header {
 		/* Force Hardware Acceleration in WebKit */
 		-webkit-transform: translateZ(0);
 		-webkit-backface-visibility: hidden;
+
+		.fa {
+	    font-size: 38px;
+		}
 
 		.cssanimations &.is-hidden {
 			visibility: hidden;
